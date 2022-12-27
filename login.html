@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="styles/style2.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <style>
+        h1,
+        h2 {
+            color: gold;
+            font-family: verdana;
+            text-align: center;
+        }
+
+        h1 {
+            font-weight: 800;
+            font-size: 50px;
+        }
+
+        h3 {
+            color: white;
+            font-family: verdana;
+            text-align: center;
+        }
+
+        #main_container {
+            padding: 20px;
+        }
+
+        .input_field {
+            display: flex;
+            padding: 10px;
+            width: 300px;
+            border-radius: 15px;
+        }
+
+
+        #email,
+        #password {
+            margin: 25px;
+        }
+
+
+        #sign_in_button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5%;
+        }
+
+        #button {
+            display: flex;
+            justify-content: center;
+        }
+
+        #login {
+            padding: 25px;
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="text"]:hover,
+        input[type="password"]:hover {
+            border: 1px solid black;
+        }
+
+        #button:hover {
+            border: 3px solid #333333;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="img/logo2.png" style="width:300px; display: block; margin-left: auto; margin-right:auto">
+
+    <div id="main_container">
+        <h1>Login</h1>
+
+
+        <div id="login">
+
+            <div id="email">
+                <h3>Email</h3>
+                <input type="text" class="input_field">
+            </div>
+
+            <div id="password">
+                <h3>Password</h3>
+                <input type="password" class="input_field">
+            </div>
+
+        </div>
+
+        <div id="button">
+            <button id="sign_in_button">Sign In</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

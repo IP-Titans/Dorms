@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Manager Profile</title>
-    <link rel="shortcut icon" href="/img/favicon.png" />
+    <title>Review Check-Out Applications</title>
+    <link rel="shortcut icon" href="/img/favicon.png">
     <style>
       body {
         background-color: #333333;
@@ -26,6 +26,11 @@
         font-weight: bold;
         color: gold;
       }
+      .logo-picture {
+        height: 100px;
+        width: 150px;
+        margin-right: 10px;
+      }
 
       .flex1 {
         flex-grow: 7;
@@ -34,10 +39,13 @@
         flex-grow: 1;
         text-align: center;
       }
-      .logo-picture {
-        height: 100px;
-        width: 150px;
-        margin-right: 10px;
+      .page-name {
+        color: gold;
+        font-size: 150%;
+        font-weight: bold;
+        margin: 2%;
+        text-align: center;
+        width: 65%;
       }
       hr {
         width: 60%;
@@ -59,7 +67,6 @@
         border-radius: 5px;
         padding: 2px;
       }
-
       .dropbtn {
         color: gold;
         padding: 4px;
@@ -116,51 +123,26 @@
         border-radius: 5px;
         padding: 2px;
       }
-
-      .page-name {
-        color: gold;
-        font-size: 150%;
-        font-weight: bold;
-        margin: 2%;
+      table {
         text-align: center;
-        width: 65%;
-      }
-
-      .body-container {
-        margin-top: 3%;
-        width: 65%;
-        display: flex;
-      }
-
-      .profile-picture-container {
-        flex-direction: row;
-        align-items: center;
-
-        margin: 2%;
-        flex-grow: 1;
-      }
-      .profile-details-container {
-        margin: 2%;
-        display: flex;
-        flex-direction: row;
-        flex-grow: 2;
-        color: white;
+        font-size: 100%;
         font-weight: bold;
-        align-items: center;
-        font-size: 130%;
+        margin-top: 5%;
+      }
+      .table_header td {
+        border: 8px solid #333333;
+        border-radius: 25px;
+        padding: 0.7rem;
+        border-spacing: 0.8rem;
+        margin: 25%;
+        background-color: gold;
       }
 
-      .profile-details-data {
-        margin-left: 10%;
-        color: gold;
-        font-size: 110%;
-      }
-
-      .profile-picture {
-        vertical-align: middle;
-        width: 400px;
-        height: 400px;
-        border-radius: 50%;
+      .table_row {
+        border: 5px solid #333333;
+        padding: 0.7rem;
+        border-spacing: 0.7rem;
+        color: white;
       }
     </style>
   </head>
@@ -195,30 +177,61 @@
         <div class="flex2"><a href="">Logout</a></div>
       </div>
       <hr />
-      <div class="page-name">Manager Profile</div>
-      <div class="body-container">
-        <div class="profile-picture-container">
-          <img
-            class="profile-picture"
-            src="/img/profilepicturetemplate.jfif"
-            alt="Profile Picture"
-          />
-        </div>
-        <div class="profile-details-container">
-          <div class="profile-details-lable">
-            <div class="name-container">Name</div>
-            <div class="nationality-container">Nationality</div>
-            <div class="nationality-container">Email</div>
-            <div class="nationality-container">Phone Number</div>
-          </div>
-          <div class="profile-details-data">
-            <div>Hassan Mustafa</div>
-            <div>Sudanese</div>
-            <div>Hassan@gmail.com</div>
-            <div>+249999155872</div>
-          </div>
-        </div>
-      </div>
+      <div class="page-name">Check-Out Applications</div>
+      <table class="table">
+        <tr class="table_header">
+          <td>Application Date</td>
+          <td>Name</td>
+          <td>Passport No</td>
+          <td>Check-Out Date</td>
+          <td>Application Status</td>
+          <td>Action</td>
+        </tr>
+        <tr>
+          <td class="table_row">12/12/2022</td>
+          <td class="table_row">Hassan Mustafa</td>
+          <td class="table_row">Q3957304</td>
+          <td class="table_row">1/1/2023</td>
+          <td class="table_row">Waiting Inspection</td>
+          <td class="table_row">
+            <a href="">Inspect</a> /
+            <a href="">Approve Check-out</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table_row">14/2/2023</td>
+          <td class="table_row">Ahmed Khalid</td>
+          <td class="table_row">Q3957304</td>
+          <td class="table_row">12/4/2023</td>
+          <td class="table_row">Waiting Inspection</td>
+          <td class="table_row">
+            <a href="">Inspect</a> /
+            <a href="">Approve Check-out</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table_row">12/2/2023</td>
+          <td class="table_row">Ali Abdallah</td>
+          <td class="table_row">Q3957304</td>
+          <td class="table_row">10/5/2023</td>
+          <td class="table_row">Approved</td>
+          <td class="table_row">
+            <a href="">Inspect</a> /
+            <a href="">Approve Check-out</a>
+          </td>
+        </tr>
+        <tr>
+          <td class="table_row">12/12/2022</td>
+          <td class="table_row">Mustafa Ali</td>
+          <td class="table_row">Q3957304</td>
+          <td class="table_row">1/1/2023</td>
+          <td class="table_row">Approved</td>
+          <td class="table_row">
+            <a href="">Inspect</a> /
+            <a href="">Approve Check-out</a>
+          </td>
+        </tr>
+      </table>
     </div>
   </body>
 </html>
