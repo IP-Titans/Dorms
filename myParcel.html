@@ -8,64 +8,57 @@
     <link rel="canonical" href="http://fontawesome.com/icons/cart-shopping" />
     <script src="https://kit.fontawesome.com/b0afced649.js" crossorigin="anonymous"></script>
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>  
-    <!-- for including header and footer files -->
+    <!-- for including header files -->
     <script>
          $(function() {
             $('#header').load('assets/header.html');
          })
-         $(function() {
-            $('#footer').load('assets/footer.html');
-         })
         //  call header file and store it in id=header
-
-
-
-
-       
         </script>
-    <title>My Parcel</title>
+    <title>My Parcels</title>
 </head>
 <body>
+
+	<!-- Header Section -->
   <div id="header"></div>
 
+
+  <!-- My Parcels Table -->
 <div class="body">
-  <!-- <div class="sidebar">
-    <ul>
-      <li><i class="fa-solid fa-box active"></i> <a href="#"><span class="active">Parcels</span></a></li>
-      <li><i class="fa-solid fa-warehouse nonactive"></i> <a href="#">Storage</a></li>
-    </ul>
-  </div> -->
+<table class="table">
+	<thead class="table-header">
+		<tr>
+			<th class="header__item"><a id="arrival" class="filter__link" href="#">Arrival Date</a></th>
+			<th class="header__item"><a id="arrived" class="filter__link filter__link" href="#">Arrived</a></th>
+			<th class="header__item"><a id="fees" class="filter__link filter__link" href="#">Fees</a></th>
+		</tr>
+	</thead>
+	<tbody class="table-content">
+	<tr class="table-row">
 
+		<td class = "table-data">12/12/2022</td>
+		<td class = "table-data">YES</td>
+		<td class = "table-data">RM2</td>
+	</tr>
+	<tr class="table-row">
 
+		<td class = "table-data">13/2/2022</td>
+		<td class = "table-data">YES</td>
+		<td class = "table-data">RM1</td>
+	</tr>
+	<tr class="table-row">
 
-  <div class="table">
-		<div class="table-header">
-			<div class="header__item"><a id="arrival" class="filter__link" href="#">Arrival Date</a></div>
-			<div class="header__item"><a id="arrived" class="filter__link filter__link" href="#">Arrived</a></div>
-			<div class="header__item"><a id="fees" class="filter__link filter__link" href="#">Fees</a></div>
-		</div>
-		<div class="table-content">	
-			<div class="table-row">		
-				<div class="table-data">12/12/2022</div>
-				<div class="table-data">YES</div>
-				<div class="table-data">RM2</div>
-			</div>
-			<div class="table-row">
-				<div class="table-data">13/2/2022</div>
-				<div class="table-data">YES</div>
-				<div class="table-data">RM1</div>
-			</div>
-			<div class="table-row">
-				<div class="table-data">1/1/2023</div>
-				<div class="table-data">NO</div>
-				<div class="table-data"></div>
-			</div>
-		</div>	
-	</div>
-  
+		<td class = "table-data">1/1/2023</td>
+		<td class = "table-data">NO</td>
+		<td class = "table-data"></td>
+	</tr>
+</tbody>
+</table>
 </div>
 
 
+
+<!-- Script for Asc and Desc in the table -->
 <script>
    var properties = [
 	        'arrival',
