@@ -95,6 +95,7 @@ nav .effect1:hover::after {
     display: flex;
     align-items: center;
     list-style: none;
+    gap: 50px;
 }
 .menu li{
     padding: 15px 10px;
