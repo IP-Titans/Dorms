@@ -551,12 +551,12 @@ form.secActive .form.first{
     align-items: center;
     margin: auto;
     margin-top: 150px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
+    flex-direction: column;
 }
 .addForm button {
-    position: absolute;
-    left:850px;
-    top: 400px;
+    position: relative;
+    margin-top: 50px;
     display: inline-block;
     cursor: pointer;
     outline: none;
@@ -740,7 +740,6 @@ form.secActive .form.first{
     width: 85%;
     align-items: center;
     margin: auto;
-
 }
 .table2{
     padding-top: 100px;
@@ -753,32 +752,27 @@ form.secActive .form.first{
     justify-content: center;
     align-items: center;
     width: 80%;
- }
-
- .table2 thead{
+}
+.table2 thead{
     background-color:gold;
-
- }
-
- .table2 thead tr th{
+}
+.table2 thead tr th{
     width: 300px;
     border-radius: 20px;
     padding: 10px;
     text-decoration: none;
- }
+}
 
- .table2 thead tr th a{
+.table2 thead tr th a{
     text-decoration: none;
     color: #333333;
- }
+}
 
- .table2 tbody tr td{
+.table2 tbody tr td{
     color: white;
     font-size: 20px;
- }
-
-
- .table2 .filter__link {
+}
+.table2 .filter__link {
     color: #333333;
     font-weight: 900;
     text-decoration: none;
@@ -787,8 +781,8 @@ form.secActive .form.first{
     padding-left: 24px;
     padding-right: 24px;
     margin: auto;
- }
- .table2 .filter__link::after {
+}
+.table2 .filter__link::after {
     content: "";
     position: absolute;
     right: 0px;
@@ -801,7 +795,6 @@ form.secActive .form.first{
     font-family: "Font Awesome 5 Free";
     content: "\f063";
     font-size: 20px;
-    /* right: -25px; */
 }
 .table2 .filter__link.asc::after {
     font-family: "Font Awesome 5 Free";
@@ -811,7 +804,6 @@ form.secActive .form.first{
 .column{
     display: flex;
     flex-direction: column;
-    /* width: 60px; */
     gap: 10px;
     align-items: center;
     justify-content: center;
@@ -840,10 +832,7 @@ form.secActive .form.first{
     border-radius: 30px;
     color: whitesmoke;
     transition: 0.7s;
-
 }
-
 .column .approve:hover, .deny:hover{
     transform:scale(1.3);
-
 }
