@@ -2,10 +2,10 @@
 <html>
 
 <head>
-    <title>Registration</title>
+    <title>Student Home</title>
     <link rel="shortcut icon" href="/img/favicon.png">
-    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <link rel="stylesheet" href="styles/style2.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 
 
     <style>
@@ -21,31 +21,9 @@
             font-size: 50px;
         }
 
-        h3 {
-            color: white;
-            font-family: verdana;
-            text-align: center;
-        }
-
         #main_container {
             padding: 20px;
         }
-
-        .input_field {
-            display: flex;
-            padding: 10px;
-            width: 300px;
-            border-radius: 15px;
-        }
-
-
-        #first_name,
-        #last_name,
-        #email,
-        #password {
-            margin: 20px;
-        }
-
 
         button {
             display: block;
@@ -99,11 +77,6 @@
             top: 0;
         }
 
-        #top_side,
-        #bottom_side {
-            display: flex;
-            justify-content: center;
-        }
 
         input[type="text"]:hover,
         input[type="password"]:hover {
@@ -113,58 +86,89 @@
         #button:hover {
             border: 3px solid #333333;
         }
+
+        #top_side,
+        #bottom_side {
+            display: flex;
+            justify-content: center;
+            margin:100px;
+        }
+
     </style>
 </head>
 
 <body>
-    <div id="header"></div>
-
 
     <a href = "home.html"><img src="img/logo2.png" style="width:300px; display: block; margin-left: auto; margin-right:auto"></a>
 
-    
-
-
     <div id="main_container">
-        <h1>Registration</h1>
+        <h1>Welcome Manager</h1>
 
         <form>
+
             <div id="top_side">
-
-                <div id="first_name">
-                    <h3>First Name</h3>
-                    <input type="text" class="input_field">
-                </div>
-
-                <div id="last_name">
-                    <h3>Last Name</h3>
-                    <input type="text" class="input_field">
-                </div>
-
-            </div>
-
-            <div id="bottom_side">
-
-                <div id="email">
-                    <h3>Email</h3>
-                    <input type="text" class="input_field">
-                </div>
-
-                <div id="password">
-                    <h3>Password</h3>
-                    <input type="password" class="input_field">
-                </div>
-
+            <div id="button">
+                <button type="submit" formaction="/check_in_application.html" id="sign_in_button">Check In Application</button>
             </div>
 
             <br><br>
 
             <div id="button">
-                <button type="submit" formaction="/login.html" id="sign_up_button">Sign Up</button>
+                <button type="submit" formaction="/addParcel.html" id="sign_in_button">Add Parcel</button>
             </div>
 
-        </form>
+            <br><br>
 
+            <div id="button">
+                <button type="submit" formaction="/manageStorage.html" id="sign_in_button">Personal Storage Requests</button>
+            </div>
+
+            <br><br>
+
+            <div id="button">
+                <button type="submit" formaction="/facilityapplications.html" id="sign_in_button">Facilities Applications</button>
+            </div>
+
+            <br><br>
+
+            <div id="button">
+                <button type="submit" formaction="/complaintsapplications.html" id="sign_in_button">Manage Complaints</button>
+            </div>
+
+        </div>
+
+        <div id="bottom_side">
+
+            <div id="button">
+                <button type="submit" formaction="/facilityapplications.html" id="sign_in_button">Facilities Applications</button>
+            </div>
+
+            <br><br>
+
+            <div id="button">
+                <button type="submit" formaction="/managerCheckInApplications.html" id="sign_in_button">Check In Applications</button>
+            </div>
+
+            <div id="button">
+                <button type="submit" formaction="/managerCheckOutApplications.html" id="sign_in_button">Check Out Applications</button>
+            </div>
+
+            <br><br>
+
+            <div id="button">
+                <button type="submit" formaction="/roomInspection.html" id="sign_in_button">Room Inspection Form</button>
+            </div>
+
+            <br><br>
+
+            <div id="button">
+                <button type="submit" formaction="/managerProfile.html" id="sign_in_button">Profile Page</button>
+            </div>
+
+            <br><br>
+
+        </div>
+        </form>
     </div>
 
 </body>
