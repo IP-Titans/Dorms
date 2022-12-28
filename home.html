@@ -21,29 +21,9 @@
             font-size: 50px;
         }
 
-        h3 {
-            color: white;
-            font-family: verdana;
-            text-align: center;
-        }
-
         #main_container {
             padding: 20px;
         }
-
-        .input_field {
-            display: flex;
-            padding: 10px;
-            width: 300px;
-            border-radius: 15px;
-        }
-
-
-        #email,
-        #password {
-            margin: 25px;
-        }
-
 
         #sign_in_button {
             background-color: #4CAF50;
@@ -60,11 +40,6 @@
             justify-content: center;
         }
 
-        #login {
-            padding: 25px;
-            display: flex;
-            justify-content: center;
-        }
 
         input[type="text"]:hover,
         input[type="password"]:hover {
@@ -82,27 +57,19 @@
     <a href = "home.html"><img src="img/logo2.png" style="width:300px; display: block; margin-left: auto; margin-right:auto"></a>
 
     <div id="main_container">
-        <h1>Login</h1>
+        <h1>Welcome to Dorms</h1>
 
-
-        <div id="login">
-
-            <div id="email">
-                <h3>Email</h3>
-                <input type="text" class="input_field">
+        <form>
+            <div id="button">
+                <button type="submit" formaction="/registration.html" id="sign_in_button">Sign Up</button>
             </div>
 
-            <div id="password">
-                <h3>Password</h3>
-                <input type="password" class="input_field">
+            <br><br>
+
+            <div id="button">
+                <button type="submit" formaction="/login.html" id="sign_in_button">Sign In</button>
             </div>
-
-        </div>
-
-        <div id="button">
-            <button id="sign_in_button">Sign In</button>
-        </div>
-
+        </form>
     </div>
 
 </body>
