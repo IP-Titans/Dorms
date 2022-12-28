@@ -15,19 +15,19 @@ body {
 
 /* ScrollBar */
 *::-webkit-scrollbar {
-    width: 10px;
+    width: 15px;
     border-radius:20px
   }
   
   *::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-radius:20px
+    background-color: white;
+    /* border-radius:20px */
 
   }
   
   *::-webkit-scrollbar-thumb {
     background: #ffd700;
-    border-radius:20px
+    /* border-radius:20px */
   }
 
 
@@ -550,8 +550,8 @@ form.secActive .form.first{
     width: 85%;
     align-items: center;
     margin: auto;
-    margin-top: 150px;
-    /* margin-bottom: 50px; */
+    margin-top: 50px;
+    /* margin-bottom: 0px; */
     flex-direction: column;
 }
 .addForm button {
