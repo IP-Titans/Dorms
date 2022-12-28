@@ -10,6 +10,7 @@
     <title>Applied Applications</title>
 
     <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="styles/applied.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
@@ -57,84 +58,9 @@
         font-size: 140%;
         font-weight: bold;
         margin: 1%;
-        text-align: center;
+        /* text-align: center; */
         width: 55%;
-      }
-      hr {
-        width: 60%;
-        border: 2px solid gold;
-        border-radius: 10px;
-      }
-      a {
-        text-decoration: none;
-        color: gold;
-        font-weight: bold;
-        font-size: 130%;
-        padding: 2px;
-      }
-      a:hover {
-        background-color: gold;
-        color: black;
-        font-weight: bold;
-        font-size: 130%;
-        border-radius: 5px;
-        padding: 2px;
-      }
-      .dropbtn {
-        color: gold;
-        padding: 4px;
-        font-size: 130%;
-        border: none;
-        background-color: #333333;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: transparent;
-        min-width: 300px;
-        box-shadow: 0px 8px 16px 0px rgba(58, 58, 58, 0.2);
-        z-index: 1;
-        left: 50%;
-        right: auto;
-        text-align: center;
-        transform: translate(-50%, 0);
-        line-height: 40px;
-      }
-
-      .dropdown-content a {
-        color: black;
-        text-decoration: none;
-        display: block;
-        padding: 2px;
-      }
-
-      .dropdown-content a:hover {
-        background-color: gold;
-        color: black;
-        font-weight: bold;
-        font-size: 130%;
-        border-radius: 5px;
-        padding: 2px;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-        padding: 2px;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: gold;
-        color: black;
-        font-weight: bold;
-        font-size: 130%;
-        border-radius: 5px;
-        padding: 2px;
+        margin-left: 280px;
       }
       table {
         text-align: center;
@@ -142,9 +68,10 @@
         font-weight: bold;
         border: 1px solid white;
         margin:auto;
+        width: 850px;
         
       }
-      .table_header td {
+        .table_header td {
         border: 1px solid white;
         padding: 0.7rem;
         border-spacing: 0.8rem;
@@ -152,7 +79,7 @@
         background-color: white;
       }
 
-      .table_row {
+        .table_row {
         border: 1px solid white;
         padding: 0.7rem;
         border-spacing: 0.7rem;
@@ -161,42 +88,14 @@
     </style>
   </head>
   <body>
-    <div class="flexbox-container">
-      <div class="navigationBar">
-        <div class="flex1">
-          <img class="logo-picture" src="/img/logo2.png" alt="logo Picture" />
-        </div>
-        <div class="flex2">
-          <div class="dropdown">
-            <button class="dropbtn">Manage</button>
-            <div class="dropdown-content">
-              <a href="#">Accommodation Applications</a>
-              <a href="#">Check Out Applications</a>
-              <a href="#">Facilities</a>
-              <a href="#">Parcels</a>
-              <a href="#">Storage</a>
-              <a href="#">Complaints</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex2">
-          <div class="dropdown">
-            <button class="dropbtn">View</button>
-            <div class="dropdown-content">
-              <a href="#">Accommodation Report</a>
-              <a href="#">Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex2"><a href="">Logout</a></div>
-      </div>
-      <hr />
+    <section id="header"></section>
+
       
       </table>
     </div>
 
     <div class="page-name">Facility Applications</div>
-      <table class="table">
+      <table class="table2">
         <tr class="table_header">
           <td>Application Date</td>
           <td>Facility</td>
@@ -216,17 +115,11 @@
           <td class="table_row">Approved
           </td>
         </tr>
-        
-
-          
-        
-       
-      
       </table>
     </div>
 
     <div class="page-name">Complaints</div>
-      <table class="table">
+      <table class="table2">
         <tr class="table_header">
           <td>Application Date</td>
           <td>Name</td>
@@ -254,7 +147,7 @@
       </table>
     </div>
     <div class="page-name">Storage Applications</div>
-      <table class="table">
+      <table class="table2">
         <tr class="table_header">
           <td>Application Date</td>
           <td>Facility</td>
@@ -284,7 +177,7 @@
     </div>
 
     <div class="page-name">Check-in Applications</div>
-      <table class="table">
+      <table class="table2">
         <tr class="table_header">
           <td>Application Date</td>
           <td>Facility</td>
@@ -314,7 +207,7 @@
     </div>
 
     <div class="page-name">Check-out Applications</div>
-      <table class="table">
+      <table class="table2">
         <tr class="table_header">
           <td>Application Date</td>
           <td>Facility</td>

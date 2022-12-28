@@ -10,10 +10,12 @@
     <title>Facilities Applications</title>
 
     <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="stylesheet" href="styles/applied.css">
+
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script>
         $(function () {
-            $('#header').load('assets/header.html');
+            $('#header').load('assets/SAM_header.html');
         })
        //  call header file and store it in id=header
     </script>
@@ -58,89 +60,16 @@
         font-weight: bold;
         margin: 2%;
         text-align: center;
-        width: 65%;
-      }
-      hr {
-        width: 60%;
-        border: 2px solid gold;
-        border-radius: 10px;
-      }
-      a {
-        text-decoration: none;
-        color: gold;
-        font-weight: bold;
-        font-size: 130%;
-        padding: 2px;
-      }
-      a:hover {
-        background-color: gold;
-        color: black;
-        font-weight: bold;
-        font-size: 130%;
-        border-radius: 5px;
-        padding: 2px;
-      }
-      .dropbtn {
-        color: gold;
-        padding: 4px;
-        font-size: 130%;
-        border: none;
-        background-color: #333333;
-      }
-
-      .dropdown {
-        position: relative;
-        display: inline-block;
-      }
-
-      .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: transparent;
-        min-width: 300px;
-        box-shadow: 0px 8px 16px 0px rgba(58, 58, 58, 0.2);
-        z-index: 1;
-        left: 50%;
-        right: auto;
+        /* width: 65%; */
         text-align: center;
-        transform: translate(-50%, 0);
-        line-height: 40px;
-      }
-
-      .dropdown-content a {
-        color: black;
-        text-decoration: none;
-        display: block;
-        padding: 2px;
-      }
-
-      .dropdown-content a:hover {
-        background-color: gold;
-        color: black;
-        font-weight: bold;
-        font-size: 130%;
-        border-radius: 5px;
-        padding: 2px;
-      }
-
-      .dropdown:hover .dropdown-content {
-        display: block;
-        padding: 2px;
-      }
-
-      .dropdown:hover .dropbtn {
-        background-color: gold;
-        color: black;
-        font-weight: bold;
-        font-size: 130%;
-        border-radius: 5px;
-        padding: 2px;
+        
       }
       table {
         text-align: center;
         font-size: 100%;
         font-weight: bold;
         margin-top: 5%;
+        margin: auto;
       }
       .table_header td {
         border: 8px solid #333333;
@@ -157,39 +86,45 @@
         border-spacing: 0.7rem;
         color: white;
       }
+      .table_row .approve{
+        color: rgb(20, 192, 20);
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 15px;
+        transition: 0.3s;
+      }
+      .table_row .approve:hover{
+        letter-spacing: 1px; 
+        background: rgb(20, 192, 20);
+        color: white;
+        border-radius: 20px;
+        width: 50px;
+        padding: 2px;    
+      }
+
+      .table_row .reject{
+        color: red;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: 15px;
+        transition: 0.3s;
+      }
+
+      .table_row .reject:hover{
+        letter-spacing: 1px; 
+        background: red;
+        color: white;
+        border-radius: 20px;
+        width: 50px;
+        padding: 2px;    
+      }
+      
+
+      
     </style>
   </head>
   <body>
-    <div class="flexbox-container">
-      <div class="navigationBar">
-        <div class="flex1">
-          <img class="logo-picture" src="/img/logo2.png" alt="logo Picture" />
-        </div>
-        <div class="flex2">
-          <div class="dropdown">
-            <button class="dropbtn">Manage</button>
-            <div class="dropdown-content">
-              <a href="#">Accommodation Applications</a>
-              <a href="#">Check Out Applications</a>
-              <a href="#">Facilities</a>
-              <a href="#">Parcels</a>
-              <a href="#">Storage</a>
-              <a href="#">Complaints</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex2">
-          <div class="dropdown">
-            <button class="dropbtn">View</button>
-            <div class="dropdown-content">
-              <a href="#">Accommodation Report</a>
-              <a href="#">Profile</a>
-            </div>
-          </div>
-        </div>
-        <div class="flex2"><a href="">Logout</a></div>
-      </div>
-      <hr />
+    <section id="header"></section>
       <div class="page-name">Facilities Applications</div>
       <table class="table">
         <tr class="table_header">
@@ -209,8 +144,8 @@
           <td class="table_row">BBQ</td>
           <td class="table_row">Available</td>
           <td class="table_row">
-            <a href="">Approve</a> /
-            <a href="">Reject</a>
+            <a href="" class="approve">Approve</a> /
+            <a href="" class="reject">Reject</a>
           </td>
         </tr>
         <tr>
@@ -221,8 +156,8 @@
             <td class="table_row">Futsal</td>
             <td class="table_row">Available</td>
             <td class="table_row">
-              <a href="">Approve</a> /
-              <a href="">Reject</a>
+              <a href="" class="approve">Approve</a> /
+              <a href="" class="reject">Reject</a>
             </td>
           </tr>
 
@@ -234,8 +169,8 @@
             <td class="table_row">Gym</td>
             <td class="table_row">Booked</td>
             <td class="table_row">
-              <a href="">Approve</a> /
-              <a href="">Reject</a>
+              <a href="" class="approve">Approve</a> /
+              <a href="" class="reject">Reject</a>
             </td>
           </tr>
 
@@ -247,8 +182,8 @@
             <td class="table_row">Ping-pong</td>
             <td class="table_row">Booked</td>
             <td class="table_row">
-              <a href="">Approve</a> /
-              <a href="">Reject</a>
+              <a href="" class="approve">Approve</a> /
+              <a href="" class="reject">Reject</a>
             </td>
           </tr>
         
