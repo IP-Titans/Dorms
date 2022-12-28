@@ -1,11 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/applied.css">
+    <link rel="canonical" href="http://fontawesome.com/icons/cart-shopping" />
+    <script src="https://kit.fontawesome.com/b0afced649.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>  
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <!-- for including header files -->
+    <script>
+         $(function() {
+            $('#header').load('assets/SAM_header.html');
+         })
+        //  call header file and store it in id=header
+        </script>
     <title>Review Check-Out Applications</title>
-    <link rel="shortcut icon" href="/img/favicon.png">
     <style>
       body {
         background-color: #333333;
@@ -16,7 +27,7 @@
         height: 100%;
         align-items: center;
       }
-      .navigationBar {
+      /* .navigationBar {
         width: 65%;
         height: 40px;
         margin-top: 2%;
@@ -38,35 +49,8 @@
       .flex2 {
         flex-grow: 1;
         text-align: center;
-      }
-      .page-name {
-        color: gold;
-        font-size: 150%;
-        font-weight: bold;
-        margin: 2%;
-        text-align: center;
-        width: 65%;
-      }
-      hr {
-        width: 60%;
-        border: 2px solid gold;
-        border-radius: 10px;
-      }
-      a {
-        text-decoration: none;
-        color: gold;
-        font-weight: bold;
-        font-size: 130%;
-        padding: 2px;
-      }
-      a:hover {
-        background-color: gold;
-        color: black;
-        font-weight: bold;
-        font-size: 130%;
-        border-radius: 5px;
-        padding: 2px;
-      }
+      } 
+      
       .dropbtn {
         color: gold;
         padding: 4px;
@@ -122,7 +106,36 @@
         font-size: 130%;
         border-radius: 5px;
         padding: 2px;
+      }*/
+      .inspect-approve-link {
+        text-decoration: none;
+        color: gold;
+        font-weight: bold;
+        font-size: 130%;
+        padding: 2px;
       }
+      .inspect-approve-link:hover {
+        background-color: gold;
+        color: black;
+        font-weight: bold;
+        font-size: 130%;
+        border-radius: 5px;
+        padding: 2px;
+      }
+      .page-name {
+        color: gold;
+        font-size: 150%;
+        font-weight: bold;
+        margin: 2%;
+        text-align: center;
+        width: 65%;
+      }
+      hr {
+        width: 60%;
+        border: 2px solid gold;
+        border-radius: 10px;
+      }
+      
       table {
         text-align: center;
         font-size: 100%;
@@ -147,8 +160,9 @@
     </style>
   </head>
   <body>
+    <section id="header"></section>
     <div class="flexbox-container">
-      <div class="navigationBar">
+      <!-- <div class="navigationBar">
         <div class="flex1">
           <img class="logo-picture" src="/img/logo2.png" alt="logo Picture" />
         </div>
@@ -175,7 +189,7 @@
           </div>
         </div>
         <div class="flex2"><a href="">Logout</a></div>
-      </div>
+      </div> -->
       <hr />
       <div class="page-name">Check-Out Applications</div>
       <table class="table">
@@ -194,8 +208,8 @@
           <td class="table_row">1/1/2023</td>
           <td class="table_row">Waiting Inspection</td>
           <td class="table_row">
-            <a href="">Inspect</a> /
-            <a href="">Approve Check-out</a>
+            <a class="inspect-approve-link" href="">Inspect</a> /
+            <a class="inspect-approve-link" href="">Approve Check-out</a>
           </td>
         </tr>
         <tr>
@@ -205,8 +219,8 @@
           <td class="table_row">12/4/2023</td>
           <td class="table_row">Waiting Inspection</td>
           <td class="table_row">
-            <a href="">Inspect</a> /
-            <a href="">Approve Check-out</a>
+            <a class="inspect-approve-link" href="">Inspect</a> /
+            <a class="inspect-approve-link" href="">Approve Check-out</a>
           </td>
         </tr>
         <tr>
@@ -216,8 +230,8 @@
           <td class="table_row">10/5/2023</td>
           <td class="table_row">Approved</td>
           <td class="table_row">
-            <a href="">Inspect</a> /
-            <a href="">Approve Check-out</a>
+            <a class="inspect-approve-link" href="">Inspect</a> /
+            <a class="inspect-approve-link" href="">Approve Check-out</a>
           </td>
         </tr>
         <tr>
@@ -227,8 +241,8 @@
           <td class="table_row">1/1/2023</td>
           <td class="table_row">Approved</td>
           <td class="table_row">
-            <a href="">Inspect</a> /
-            <a href="">Approve Check-out</a>
+            <a class="inspect-approve-link" href="">Inspect</a> /
+            <a class="inspect-approve-link" href="">Approve Check-out</a>
           </td>
         </tr>
       </table>

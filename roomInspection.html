@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/applied.css">
+    <link rel="canonical" href="http://fontawesome.com/icons/cart-shopping" />
+    <script src="https://kit.fontawesome.com/b0afced649.js" crossorigin="anonymous"></script>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>  
+    <link rel="shortcut icon" href="/img/favicon.png" />
+    <!-- for including header files -->
+    <script>
+         $(function() {
+            $('#header').load('assets/SAM_header.html');
+         })
+        //  call header file and store it in id=header
+        </script>
     <title>Room Inspection</title>
-    <link rel="shortcut icon" href="/img/favicon.png">
-    <link rel="shortcut icon" href="/img/favicon.png">
     <style>
       body {
         background-color: #333333;
@@ -14,7 +27,7 @@
         height: 100%;
         align-items: center;
       }
-      .navigation-bar-container {
+      /* .navigation-bar-container {
         width: 65%;
         height: 40px;
         margin-top: 2%;
@@ -103,7 +116,7 @@
         font-size: 130%;
         border-radius: 5px;
         padding: 5px;
-      }
+      } */
       hr {
         width: 60%;
         border: 2px solid gold;
@@ -163,8 +176,9 @@
     </style>
   </head>
   <body>
+    <section id="header"></section>
     <div class="body-container">
-      <div class="navigation-bar-container">
+      <!-- <div class="navigation-bar-container">
         <div class="navigation-bar-logo">
           <img class="logo-picture" src="/img/logo2.png" alt="logo Picture" />
         </div>
@@ -191,7 +205,7 @@
           </div>
         </div>
         <div class="navigation-bar-link"><a href="">Logout</a></div>
-      </div>
+      </div> -->
       <hr />
       <div class="page-name-container">Room Inspection Form</div>
       <div class="form-body-container">
